@@ -1,0 +1,9 @@
+Anwendungsfälle
+-----------------------------------
+Alle Dateien die in den letzten 2 Wochen geändert wurden mit Committnachricht anzeigen
+git log --since="2 weeks ago" --name-only --pretty=short
+
+
+-----------------------------------
+Alle Änderungen der letzten Woche ansehen
+git log --since="7 days ago" --stat

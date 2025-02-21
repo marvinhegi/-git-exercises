@@ -1,0 +1,20 @@
+1)
+rm foo.txt
+git rm bar.txt
+
+rm löscht die Dateien nur aus dem Verzeichnis. Git erkennt es als Änderung die nicht gestaget wurde.
+git rm entfernt die Datei aus dem Verzeichnis und dem Stagingbereich
+
+
+2)
+git checkout -- foo.txt
+git reset HEAD bar.txt
+git checkout -- bar.txt
+
+
+3)
+mv foo.txt foo_new.txt
+git mv bar.txt bar_new.txt
+
+git mv ist vorzuziehen da git die Umbenennung so direkt erkennt.
+bei mv erkennt er das File als gelöscht und ein neues erstellt es ist somit nicht gestaged.
